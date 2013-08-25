@@ -1,8 +1,5 @@
-<% if user_signed_in? %> 
 
-<h1>You're Logged In</h1>
-
-<% else %> 
+<% unless user_signed_in? %> 
 	<div class="hero-unit">
 		<h1>Welcome to one Month Rails</h1>
 		<p>You've found the home page for the
